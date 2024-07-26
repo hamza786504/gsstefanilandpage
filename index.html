@@ -27,7 +27,11 @@
 <body>
 
     <section class="relative hero_section p-2 relative w-full bg-cover bg-center" id="home">
-        <video src="./assets/images/Landing Page - Hero Video.mp4" class="absolute top-0 object-cover left-0 min-h-screen w-full -z-10" autoplay></video>
+        <video src="./assets/images/Landing Page - Hero Video.mp4" class="absolute top-0 object-cover left-0 min-h-screen w-full -z-10" autoplay preload="auto"
+        muted
+        playsinline
+        loop
+        loading="lazy"></video>
         <div class="container xl:max-w-6xl lg:max-w-5xl z-30 md:max-w-4xl sm:max-w-3xl mx-auto">
             <header class='px-0 sm:px-3 md:px-0 flex pt-2 ps-2 md:ps-0 mb-8 items-center relative z-50'>
                 <div class='flex flex-wrap items-center justify-between gap-5 w-full'>
