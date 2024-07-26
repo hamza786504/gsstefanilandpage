@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font-awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css"
+        integrity="sha512-C8Movfk6DU/H5PzarG0+Dv9MA9IZzvmQpO/3cIlGIflmtY3vIud07myMu4M/NTPJl8jmZtt/4mC9bAioMZBBdA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>GSSTEFANILANDPAGE</title>
+</head>
+
+<body>
+
+    <section class="relative hero_section p-2 relative w-full bg-cover bg-center" id="home">
+        <video src="./assets/images/Landing Page - Hero Video.mp4" class="absolute top-0 object-cover left-0 min-h-screen w-full -z-10" autoplay></video>
+        <div class="container xl:max-w-6xl lg:max-w-5xl z-30 md:max-w-4xl sm:max-w-3xl mx-auto">
+            <header class='px-0 sm:px-3 md:px-0 flex pt-2 ps-2 md:ps-0 mb-8 items-center relative z-50'>
+                <div class='flex flex-wrap items-center justify-between gap-5 w-full'>
+                    <a href="#home">
+                        <img src="./assets/images/gotskills vector.png" class="max-w-[150px]" alt="" />
+                    </a>
+                    <div id="collapseMenu"
+                        class='hidden flex-1 lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50'>
+                        <button id="toggleClose"
+                            class='lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white p-3'>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-black"
+                                viewBox="0 0 320.591 320.591">
+                                <path
+                                    d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+                                    data-original="#000000"></path>
+                                <path
+                                    d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+                                    data-original="#000000"></path>
+                            </svg>
+                        </button>
+
+                        <ul
+                            class='lg:flex lg:justify-end gap-x-1 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50'>
+                            <li class='mb-6 hidden max-lg:block'>
+                                <a href="#home"><img src="./assets/images/gotskills vector.png" alt="logo" class='w-24' />
+                                </a>
+                            </li>
+                            <li class='max-lg:border-b border-gray-300 max-lg:py-3 px-0 lg:px-3'>
+                                <a href='#what-is-gotskill'
+                                    class='hover:text-red-600 text-red-500 block font-semibold text-[15px]'>What is
+                                    GOTSKILL?</a>
+                            </li>
+                            <li class='max-lg:border-b border-gray-300 max-lg:py-3 px-0 lg:px-3'><a href='#features'
+                                    class='hover:text-red-600 text-gray-500 md:text-white block font-semibold text-[15px]'>Features</a>
+                            </li>
+                            <li class='max-lg:border-b border-gray-300 max-lg:py-3 px-0 lg:px-3'><a href='#madd'
+                                    class='hover:text-red-600 text-gray-500 md:text-white block font-semibold text-[15px]'>MADD</a>
+                            </li>
+                            <li class='max-lg:border-b border-gray-300 max-lg:py-3 px-0 lg:px-3'><a href='#where-we-are'
+                                    class='hover:text-red-600 text-gray-500 md:text-white block font-semibold text-[15px]'>Where
+                                    We
+                                    Are</a>
+                            </li>
+                            <li class='max-lg:border-b border-gray-300 max-lg:py-3 px-0 lg:px-3'><a href='#contact'
+                                    class='hover:text-red-600 text-gray-500 md:text-white block font-semibold text-[15px]'>Contact
+                                    Now!</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class='flex max-lg:ml-auto space-x-3'>
+                        <button id="toggleOpen" class='lg:hidden'>
+                            <svg class="w-7 h-7" fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </header>
+            <div
+                class="px-0 py-14 sm:px-3 md:px-0 relative mb-20 flex flex-col lg:flex-row justify-center lg:justify-between items-center ">
+                <div
+                    class="animate__animated animate__fadeInLeft text-center max-w-[700px] flex flex-col font-titillium-web lg:items-start items-center w-full text-center lg:text-left lg:w-3/6 space-y-6 text-white">
+                    <p class="text-[15px] sm:text-[18px] uppercase font-nunito tracking-[2px]">We Craft Stuffs</p>
+                    <h2 class="text-3xl sm:text-5xl font-[100] !leading-tight">Turn Fun into<br /><span
+                            class="font-bold">FUNDS with GOTSKILL?</span></h2>
+                    <p class="opacity-65 font-nunito text-[15px] sm:text-[20px] font-[400]">Discover how our no-cost,
+                        easy-to-install game systems can boost your business and engage your customers.</p>
+                    <div class="flex flex-col sm:flex-row items-center mt-10">
+                        <button
+                            class="text-white font-semibold text-[18px] sm:text-[24px] bg-primary hover:bg-transparent hover:border-2 hover:border-primary border-2 border-transparent p-2 px-6 rounded-full focus:outline-none transition-colors">Schedule
+                            a Free Consultation</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="bg-gray-100 py-16" id="what-is-gotskill">
+        <div class="container xl:max-w-6xl lg:max-w-5xl md:max-w-4xl sm:max-w-3xl mx-auto mx-auto px-4">
+            <div class="flex flex-nowrap items-center flex-col lg:flex-row ">
+                <div data-wow-delay="0.5s"
+                    class="w-full wow animate__animated animate__fadeInUp lg:w-1/2 pe-0 lg:pe-10">
+                    <h3 class=" text-[#222] font-titillium-web  max-w-[858px] text-[26px] sm:text-[36px] font-[100]">
+                        What Is
+                        <span class="font-[600]">GOTSKILL?</span>
+                    </h3>
+                    <p class="text-base mt-3 font-nunito mx-auto">Our skill games challenge players' hand-eye
+                        coordination and timing in over 38 games. People find them fun because the games are engaging,
+                        and their skills are tested.</p>
+                    <button
+                        class="text-white font-semibold text-[18px] sm:text-[24px] bg-primary hover:bg-transparent hover:border-2 hover:border-primary border-2 border-transparent p-2 px-6 rounded-full focus:outline-none transition-colors mt-10">Schedule
+                        a Free Consultation</button>
+
+                </div>
+                <div data-wow-delay="0.8s"
+                    class="mt-6 lg:mt-0 w-full wow animate__animated animate__fadeInRight lg:w-1/2 video-preview">
+                    <img src="./assets/images/GOTSKILL Play.gif" alt="gotskill play" class="w-full" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-white py-20" id="features">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-5 md:mb-10 lg:mb-20">
+                <h3 class="text-[22px] md:text-[32px] font-[300] font-bold font-titillium-web mb-5">Features</h3>
+                <p class="text-sm md:text-base max-w-xl mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+            <div class="flex items-center gap-5 owl-carousel owl-theme">
+                <div data-wow-delay="0.3s"
+                    class="hover:shadow-xl item wow animate__animated mx-auto animate__fadeInUp rounded-lg text-center bg-white grid sm:grid-cols-2 items-start shadow-md hover:scale-105 max-w-2xl max-sm:max-w-sm rounded-lg  overflow-hidden mx-auto mt-4">
+                    <div class="min-h-[120px] max-w-[200px] mx-auto h-full">
+                        <img src="./assets/images/EasyStart.png" class="w-full h-full object-cover" />
+                    </div>
+
+                    <div class="p-3 text-start">
+                        <h3 class="text-xl font-semibold">So Easy To Get Started!</h3>
+                        <p class="mt-3 text-sm text-gray-500 leading-relaxed">Our quick Application and Agreement signup
+                            is a cinch.
+                        </p>
+                    </div>
+                </div>
+                <div data-wow-delay="0.6s"
+                    class="hover:shadow-xl item wow animate__animated mx-auto animate__fadeInUp rounded-lg text-center bg-white grid sm:grid-cols-2 items-start shadow-md hover:scale-105 max-w-2xl max-sm:max-w-sm rounded-lg  overflow-hidden mx-auto mt-4">
+                    <div class="min-h-[120px] max-w-[200px] mx-auto h-full">
+                        <img src="./assets/images/NoCost.png" class="w-full h-full object-cover" />
+                    </div>
+
+                    <div class="p-3 text-start">
+                        <h3 class="text-xl font-semibold">No-Cost Installation</h3>
+                        <p class="mt-3 text-sm text-gray-500 leading-relaxed">We charge nothing for installation, and
+                            there are no monthly minimum or fixed royalty fees.
+                        </p>
+                    </div>
+                </div>
+                <div data-wow-delay="0.9s"
+                    class="hover:shadow-xl item wow animate__animated mx-auto animate__fadeInUp rounded-lg text-center bg-white grid sm:grid-cols-2 items-start shadow-md hover:scale-105 max-w-2xl max-sm:max-w-sm rounded-lg overflow-hidden mx-auto mt-4">
+                    <div class="min-h-[120px] max-w-[200px] mx-auto h-full">
+                        <img src="./assets/images/RevShare.png" class="w-full h-full object-cover" />
+                    </div>
+
+                    <div class="p-3 text-start">
+                        <h3 class="text-xl font-semibold">Pure Revenue Share!</h3>
+                        <p class="mt-3 text-sm text-gray-500 leading-relaxed">We win when you win: Free equipment
+                            installation, shared profits.
+                        </p>
+                    </div>
+                </div>
+                <div data-wow-delay="1.2s"
+                    class="hover:shadow-xl item wow animate__animated mx-auto animate__fadeInUp rounded-lg text-center bg-white grid sm:grid-cols-2 items-start shadow-md hover:scale-105 max-w-2xl max-sm:max-w-sm rounded-lg overflow-hidden mx-auto mt-4">
+                    <div class="min-h-[120px] max-w-[200px] mx-auto h-full">
+                        <img src="./assets/images/Effortless.png" class="w-full h-full object-cover" />
+                    </div>
+
+                    <div class="p-3 text-start">
+                        <h3 class="text-xl font-semibold">Effortless!</h3>
+                        <p class="mt-3 text-sm text-gray-500 leading-relaxed">Customers can start playing without tying
+                            up staff. Redemptions are quick and easy.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container mx-auto py-10 px-4" id="madd">
+        <img src="./assets/images/MADD logo.png" class="max-w-[400px] w-full mx-auto" alt="">
+        <h6
+            class="wow animate__animated animate__fadeInUp text-center pt-10 pb-6 mx-auto text-[#222]  max-w-[650px] text-[16px] sm:text-[22px] md:text-[14px] font-[200] mb-10 font-titillium-web">
+            Proud of its affiliation /w MADD Canada, <strong>GOTSKILL?</strong> is a recognized Official Sponsor,
+            donating a minimum of <strong>$100,000/year. GOTSKILL?</strong> gives a percentage of its revenue to MADD
+            Canada - and offers players the opportunity to donate a portion, or all of their winnings, to the charity.
+        </h6>
+        <hr class="opacity-10">
+    </section>
+    <!-- <section class="container py-16 mx-auto">
+        <div class="flex flex-wrap justify-center">
+            <div data-wow-delay="0.3s"
+                class="w-full md:w-1/2 lg:w-1/4 hover:-translate-y-1 px-3 transition-translate duration-100 wow animate__animated animate__fadeInUp text-center max-w-[400px] card py-5">
+                <div
+                    class="hover:scale-[1.14] transition-scale duration-200 flex items-center justify-center rounded-full h-16 w-16 mx-auto text-white mb-3 bg-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+                    </svg>
+                </div>
+                <h4 class="text-[21.6px] text-[#222] mb-2 font-titillium-web font-semibold">Technological Innovation
+                </h4>
+                <p class="font-nunito opacity-65">Praesent dapibus, tortor neque egestas auguae, eu vulputate magna
+                    eu erat. </p>
+            </div>
+            <div data-wow-delay="0.5s"
+                class="w-full md:w-1/2 lg:w-1/4 hover:-translate-y-1 px-3 transition-translate duration-100 wow animate__animated animate__fadeInUp text-center max-w-[400px] card py-5">
+                <div
+                    class="hover:scale-[1.14] transition-scale duration-200 flex items-center justify-center rounded-full h-16 w-16 mx-auto text-white mb-3 bg-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
+                    </svg>
+                </div>
+                <h4 class="text-[21.6px] text-[#222] mb-2 font-titillium-web font-semibold">Creativity Designs</h4>
+                <p class="font-nunito opacity-65">Praesent dapibus, tortor neque egestas auguae, eu vulputate magna
+                    eu erat. </p>
+            </div>
+            <div data-wow-delay="0.7s"
+                class="w-full md:w-1/2 lg:w-1/4 hover:-translate-y-1 px-3 transition-translate duration-100 wow animate__animated animate__fadeInUp text-center max-w-[400px] card py-5">
+                <div
+                    class="hover:scale-[1.14] transition-scale duration-200 flex items-center justify-center rounded-full h-16 w-16 mx-auto text-white mb-3 bg-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
+                    </svg>
+                </div>
+                <h4 class="text-[21.6px] text-[#222] mb-2 font-titillium-web font-semibold">Custom Support</h4>
+                <p class="font-nunito opacity-65">Praesent dapibus, tortor neque egestas auguae, eu vulputate magna
+                    eu erat. </p>
+            </div>
+            <div data-wow-delay="0.9s"
+                class="w-full md:w-1/2 lg:w-1/4 hover:-translate-y-1 px-3 transition-translate duration-100 wow animate__animated animate__fadeInUp text-center max-w-[400px] card py-5">
+                <div
+                    class="hover:scale-[1.14] transition-scale duration-200 flex items-center justify-center rounded-full h-16 w-16 mx-auto text-white mb-3 bg-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25M9 16.5v.75m3-3v3M15 12v5.25m-4.5-15H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                    </svg>
+                </div>
+                <h4 class="text-[21.6px] text-[#222] mb-2 font-titillium-web font-semibold">Project Management</h4>
+                <p class="font-nunito opacity-65">Praesent dapibus, tortor neque egestas auguae, eu vulputate magna
+                    eu erat. </p>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- <section class="relative flex items-center bg-cover py-16 bg-center"
+        style="background: linear-gradient(rgb(34, 34, 34, 0.85) , rgb(34, 34, 34,0.85)) , url('./assets/images/sction-2.jpg');">
+        <div class="flex items-start flex-row justify-center flex-wrap w-full">
+            <div data-wow-delay="0.3s"
+                class="wow animate__animated animate__fadeInUp w-full md:w-1/2 lg:w-1/4 text-center max-w-[400px] text-white p-5">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-14 text-primary mx-auto text-5xl mb-2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+                </svg>
+                <h4 class="font-titillium-web text-[48px] font-bold mb-2">1465</h4>
+                <p class="opacity-65 font-nunito">Projects Completed</p>
+            </div>
+            <div data-wow-delay="0.6s"
+                class="wow animate__animated animate__fadeInUp w-full md:w-1/2 lg:w-1/4 text-center max-w-[400px] text-white p-5">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-14 text-primary mx-auto text-5xl mb-2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
+                </svg>
+
+
+                <h4 class="font-titillium-web text-[48px] font-bold mb-2">290</h4>
+                <p class="opacity-65 font-nunito">Happy Clients</p>
+            </div>
+            <div data-wow-delay="0.9s"
+                class="wow animate__animated animate__fadeInUp w-full md:w-1/2 lg:w-1/4 text-center max-w-[400px] text-white p-5">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-14 text-primary mx-auto text-5xl mb-2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 0 1 0 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 0 1 0-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375Z" />
+                </svg>
+
+                <h4 class="font-titillium-web text-[48px] font-bold mb-2">1532</h4>
+                <p class="opacity-65 font-nunito">Close Tickets</p>
+            </div>
+            <div data-wow-delay="1.2s"
+                class="wow animate__animated animate__fadeInUp w-full md:w-1/2 lg:w-1/4 text-center max-w-[400px] text-white p-5">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-14 text-primary mx-auto text-5xl mb-2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+                <h4 class="font-titillium-web text-[48px] font-bold mb-2">27980</h4>
+                <p class="opacity-65 font-nunito">Working Hours</p>
+            </div>
+        </div>
+
+    </section> -->
+    <!-- <section class="container mx-auto px-4 py-20">
+        <div class="text-center flex justify-center flex-col items-center mb-20">
+            <h3 class="text-center max-w-[690px] text-[#222]  text-[22px] md:text-[36px] font-[300] mb-10">Get Your
+                Best
+                Preferred and
+                Suitable <em class="font-[500]">Pricing Plans and Options</em> </h3>
+            <p class="max-w-[548px] opacity-65 text-[14px] md:text-[18px] mx-auto">This should be used to tell a story
+                and let your
+                users
+                know a
+                little more about your product or service. How can you benefit them?</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+            <div
+                class="bg-white pricing-card w-full wow animate__animated animate__fadeInLeft pt-6 py-0 md:py-[50px] px-4 md:px-[40px] border-2 hover:border-gray-500 rounded-lg shadow-lg text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-14 mx-auto text-primary mb-10">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 9v3.75m0-10.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.25-8.25-3.286Zm0 13.036h.008v.008H12v-.008Z" />
+                </svg>
+
+                <h4 class="text-xl font-titillium-web font-bold mb-4 text">Starter</h4>
+                <p class="text-4xl font-titillium-web price font-bold mb-4">$249</p>
+                <span class="text-[12px] font-nunito opacity-65">Per Month</span><br><br>
+                <button class="py-3 px-6 font-titillium-web bg-primary text-white rounded-full font-bold">GET
+                    STARTED</button><br><br>
+                <ul class="space-y-2 mb-4 text-start ">
+                    <li class="flex justify-between">
+                        <p class="font-nunito">Marketing strategy</p>
+                        <i class="fa fa-check-square" aria-hidden="true"></i>
+                    </li>
+                    <li class="flex justify-between">
+                        <p class="font-nunito">Competitive analysis</p>
+                        <i class="fa fa-check-square" aria-hidden="true"></i>
+                    </li>
+                    <li class="flex justify-between">
+                        <p class="font-nunito">Social media audit</p>
+                        <i class="fa fa-check-square" aria-hidden="true"></i>
+                    </li>
+                    <li class="flex justify-between">
+                        <p class="font-nunito">Monthly management</p>
+                        <i class="fa fa-check-square" aria-hidden="true"></i>
+                    </li>
+                    <li class="flex justify-between">
+                        <p class="font-nunito">Unlimited data transfer</p>
+                        <i class="fa fa-window-close" aria-hidden="true"></i>
+                    </li>
+
+                </ul>
+
+            </div>
+            <div
+                class="bg-white pricing-card w-full wow animate__animated animate__fadeInUp pt-6 py-0 md:py-[70px] px-4 md:px-[40px] rounded-lg shadow-lg text-center border-2 border-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-14 mx-auto text-primary mb-10">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 9v3.75m0-10.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.25-8.25-3.286Zm0 13.036h.008v.008H12v-.008Z" />
+                </svg>
+                <h4 class="text-xl font-titillium-web  mb-4">Professional</h4>
+                <p class="text-4xl price text-primary font-titillium-web font-bold mb-4">$499</p>
+                <span class="text-[12px] opacity-65 font-nunito">Per Month</span><br><br>
+                <button class="py-3 px-6 bg-primary text-white rounded-full font-bold">GET STARTED</button><br><br>
+                <ul class="space-y-2 mb-4 text-start ">
+                    <li class="flex justify-between">
+                        <p class="font-nunito">Marketing strategy</p>
+                        <i class="fa fa-check-square text-primary" aria-hidden="true"></i>
+                    </li>
+                    <li class="flex justify-between">
+                        <p class="font-nunito">Competitive analysis</p>
+                        <i class="fa fa-check-square text-primary" aria-hidden="true"></i>
+                    </li>
+                    <li class="flex justify-between">
+                        <p class="font-nunito">Social media audit</p>
+                        <i class="fa fa-check-square text-primary" aria-hidden="true"></i>
+                    </li>
+                    <li class="flex justify-between">
+                        <p class="font-nunito">Monthly management</p>
+                        <i class="fa fa-check-square text-primary" aria-hidden="true"></i>
+                    </li>
+                    <li class="flex justify-between">
+                        <p class="font-nunito">Unlimited data transfer</p>
+                        <i class="fa fa-check-square text-primary" aria-hidden="true"></i>
+                    </li>
+
+                </ul>
+            </div>
+            <div
+                class="bg-white pricing-card w-full wow animate__animated animate__fadeInRight pt-6 py-0 md:py-[50px] px-4 md:px-[40px] border-2 hover:border-gray-500 rounded-lg shadow-lg text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-14 mx-auto text-primary mb-10">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 9v3.75m0-10.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.25-8.25-3.286Zm0 13.036h.008v.008H12v-.008Z" />
+                </svg>
+                <h4 class="text-xl font-bold font-titillium-web mb-4 text">Enterprise</h4>
+                <p class="text-4xl price font-titillium-web font-bold mb-4">$799 </p>
+                <span class="text-[12px] font-nunito opacity-65">Per Month</span><br><br>
+                <button class="py-3 px-6 font-titillium-web bg-primary text-white rounded-full font-bold">GET
+                    STARTED</button><br><br>
+                <ul class="space-y-2 mb-4 text-start ">
+                    <li class="flex justify-between">
+                        <p class="font-nunito">Marketing strategy</p>
+                        <i class="fa fa-check-square" aria-hidden="true"></i>
+                    </li>
+                    <li class="flex justify-between">
+                        <p class="font-nunito">Competitive analysis</p>
+                        <i class="fa fa-check-square" aria-hidden="true"></i>
+                    </li>
+                    <li class="flex justify-between">
+                        <p class="font-nunito">Social media audit</p>
+                        <i class="fa fa-check-square" aria-hidden="true"></i>
+                    </li>
+                    <li class="flex justify-between">
+                        <p class="font-nunito">Monthly management</p>
+                        <i class="fa fa-check-square" aria-hidden="true"></i>
+                    </li>
+                    <li class="flex justify-between">
+                        <p class="font-nunito">Unlimited data transfer</p>
+                        <i class="fa fa-check-square" aria-hidden="true"></i>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- <section class="bg-primary py-16">
+        <div class="container mx-auto px-4 py-8  items-center space-x-8">
+            <div class="owl-carousel owl-theme">
+                <div class="item"><img src="assets/images/slider/img-1.png" alt="Image 1" class="mx-auto max-w-[70px]">
+                </div>
+                <div class="item"><img src="assets/images/slider/img-2.png" alt="Image 2" class="mx-auto max-w-[70px]">
+                </div>
+                <div class="item"><img src="assets/images/slider/img-3.png" alt="Image 3" class="mx-auto max-w-[70px]">
+                </div>
+                <div class="item"><img src="assets/images/slider/img-4.png" alt="Image 4" class="mx-auto max-w-[70px]">
+                </div>
+                <div class="item"><img src="assets/images/slider/img-5.png" alt="Image 5" class="mx-auto max-w-[70px]">
+                </div>
+                <div class="item"><img src="assets/images/slider/img-6.png" alt="Image 6" class="mx-auto max-w-[70px]">
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- <section class="bg-gray-900 text-white py-16"
+        style="background: linear-gradient(rgba(0,0,0,0.8) , rgba(0,0,0,0.8)) , url('./assets/images/section3.jpg');">
+        <div class="wow animate__animated animate__fadeInUp container mx-auto px-4 text-center">
+            <h3 class="text-base font-titillium-web md:text-xxl font-bold">We Are Waiting</h3>
+            <h2 class="text-4xl font-titillium-web md:text-5xl font-bold my-8">Let's Get Started Now!</h2>
+            <p class="max-w-xl mx-auto font-nunito mb-8 text-sm md:text-base">We care to deliver adaptive services
+                and solutions to
+                our customers to
+                achieve and satisfy their needs.</p>
+            <button
+                class="text-white font-nunito font-semibold text-[16px] sm:text-[20px] bg-primary hover:bg-transparent hover:border-2 hover:border-primary border-2 border-transparent p-2 px-6 rounded-full focus:outline-none transition-colors">Let's
+                Start</button>
+        </div>
+    </section> -->
+
+    <section class="py-16" id="where-we-are">
+        <div class="w-full text-center mb-10">
+            <h3
+                class="text-center mx-auto max-w-[690px] text-[#222] font-titillium-web text-[22px] md:text-[36px] font-bold mb-10">
+                Where
+                We Are</h3>
+            <p class="text-sm md:text-base max-w-lg mx-auto">GOTSKILL? is available throughout Ontario - from Windsor to
+                Niagara Region to Ottawa and Cornwall, throughout the Greater Toronto Area and as far north as Thunder
+                Bay and Pickle Lake.</p>
+        </div>
+        <div class="flex gap-16 items-center relative flex-wrap md:flex-nowrap overflow-hidden p-8 max-w-6xl mx-auto before:absolute before:right-0 before:w-[300px] before:bg-red-500 before:h-full max-md:before:hidden" id="contact">
+            <div class="wow animate__animated animate__fadeInLeft md:w-1/2 px-3 w-full">
+                <h2 class="text-gray-800 text-3xl font-titillium-web font-bold">Get In Touch</h2>
+                <p class="text-sm text-gray-500 mt-4 leading-relaxed">Have a specific inquiry or looking to explore new
+                    opportunities? Our
+                    experienced team is ready to engage with you.</p>
+
+                <form>
+                    <div class="space-y-4 mt-8">
+                        <input type="text" placeholder="First Name"
+                            class="px-2 py-3 bg-white w-full text-gray-800 text-sm border-b border-gray-300 focus:border-blue-600 outline-none" />
+                        <input type="text" placeholder="Last Name"
+                            class="px-2 py-3 bg-white w-full text-gray-800 text-sm border-b border-gray-300 focus:border-blue-600 outline-none" />
+
+                        <input type="email" placeholder="Email"
+                            class="px-2 py-3 bg-white w-full text-gray-800 text-sm border-b border-gray-300 focus:border-blue-600 outline-none" />
+                    </div>
+
+                    <button type="button"
+                        class="mt-8 flex items-center justify-center text-sm w-full px-6 py-3 bg-red-600 hover:bg-red-700 text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill='#fff' class="mr-2"
+                            viewBox="0 0 548.244 548.244">
+                            <path fill-rule="evenodd"
+                                d="M392.19 156.054 211.268 281.667 22.032 218.58C8.823 214.168-.076 201.775 0 187.852c.077-13.923 9.078-26.24 22.338-30.498L506.15 1.549c11.5-3.697 24.123-.663 32.666 7.88 8.542 8.543 11.577 21.165 7.879 32.666L390.89 525.906c-4.258 13.26-16.575 22.261-30.498 22.338-13.923.076-26.316-8.823-30.728-22.032l-63.393-190.153z"
+                                clip-rule="evenodd" data-original="#000000" />
+                        </svg>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+            <div class="wow animate__animated animate__fadeInRight md:w-1/2 px-3 w-full z-10 relative h-full max-md:min-h-[350px] flex items-center">
+                <img src="./assets/images/Gotskill Locations.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <footer class="container-lg mx-auto py-4 px-0">
+        <div class="mx-auto px-4 flex flex-col sm:flex-row justify-between items-center text-center">
+            <p class="mb-0 text-sm md:text-base">
+
+                © 2024 <em class="font-medium">GOTSKILL</em>, LLC. All rights reserved.
+            </p>
+            <div class="flex items-center space-x-5 mt-4 sm:mt-0">
+                <a href="/" class="inline-block flex items-center justify-center text-sm">
+                    About
+                </a>
+                <a href="/" class="inline-block flex items-center justify-center text-sm">
+                    Help
+                </a>
+                <a href="/" class="inline-block flex items-center justify-center text-sm">
+                    Privacy
+                </a>
+                <a href="/" class="inline-block flex items-center justify-center text-sm">
+                    Terms
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: "#da373d",
+                        primary: "#E52A2A",
+                    },
+                    fontFamily: {
+                        'open-sans': ['Open Sans', 'sans-serif'],
+                        'titillium-web': ['Titillium Web', 'sans-serif'],
+                        "nunito": ['Nunito', 'sans-serif']
+                    },
+                },
+            },
+        };
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
